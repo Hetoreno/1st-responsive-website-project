@@ -1,0 +1,304 @@
+*{
+box-sizing: border-box;
+margin:0;
+padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif; ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h4{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 2.8rem;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: #FFCDB2;
+    padding: 2rem 6rem;
+    font-size: 2.5rem;
+    transition: background 0.5s ease-in-out;
+}
+
+button:hover{
+    background: rgb(255, 174, 130);
+}
+
+/* Intro Start */
+/* Navigation Start */
+#logo{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    flex:  10 1 40rem;
+    font-weight: 400;
+    font-size: 2.6rem;
+}
+
+.headi{
+    background: #FFB4A2;
+    color: black;
+    position: sticky;
+    top:0px;
+}
+
+.headi a:hover{
+    font-size: 2.3rem;
+}
+
+.headi a{
+    transition: all 0.5s ease-in-out;
+}
+
+nav{
+    display: flex;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 40rem;
+    list-style: none;
+}
+
+nav li{
+    font-size: 2rem;
+    font-weight: 450;
+}
+/* Navigation End */
+.intro{
+background: linear-gradient(rgba(0, 0, 0, 0.76), transparent), url(/Images/pexels-photo-1020372.jpeg);
+min-height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+display: flex;
+flex-direction: column;
+color: white;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.intro h2{
+
+padding: 3rem;
+}
+
+.intro button{
+    border-radius: 10px;
+}
+
+/* Intro End */
+
+/* About Start */
+#about{
+    min-height:90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.795), transparent), url(./Images/pexels-photo-1478442.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.head{
+    width: 90%;
+    margin: auto;
+}
+
+.head h2{
+    padding-bottom: 2rem;
+}
+/* About End */
+
+/* Process Start */
+.c-header{
+    background:#FFCDB2;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:3rem;
+}
+
+.cards{
+    display: flex;
+    width:90%;
+    margin:auto;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap:wrap;
+
+}
+
+.card{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.486), 0px 20px 20px rgba(0, 0, 0, 0.377);
+    text-align: center;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    flex: 1 1 30rem;
+}
+.card-img{
+    background:#B5838D;
+}
+.cards img{
+    max-width: 20%;
+    margin: 2rem;
+}
+
+.card h4 p {
+    padding: 1.5rem;
+}
+/* Process End */
+
+/* Contact Start */
+#contact{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent), url(./Images/pexels-photo-609771.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper{
+    background:rgba(229, 152, 155, 0.5);
+    width:60%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.form-wrapper button{
+    width:100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 8rem;
+}
+
+.f-header{
+    padding:2rem;
+}
+
+.n-form , .e-form{
+    padding: 2rem;
+}
+
+.form-wrapper input{
+    padding: 1rem 3rem;
+}
+
+.form-wrapper label{
+    font-size: 2rem;
+}
+/* Conatct End */
+
+/* Footer Start */
+footer{
+    background: #6D6875;
+}
+
+footer img{
+    width:2rem;
+}
+
+footer h3{
+    font-size: 3rem;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+}
+
+footer a{
+    padding: 2rem;
+}
+
+.footer-wrap{
+    min-height:10vh;
+    display: flex;
+    width: 90%;
+    margin:auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+/* Footer End */
+/* Tbalet Start */
+@media screen and (max-width:1024px) and (min-width:501px) {
+    
+    .form-wrapper{
+        width:100%;
+    }
+
+html{
+    font-size: 70%;
+}
+
+    nav{
+        text-align: center;
+    }
+
+    #logo{
+        padding:1.5rem;
+    }
+
+    .form-wrapper label{
+        font-size:3rem;
+    }
+
+}
+/* Tablet End */
+
+/*Mobile Start*/
+@media screen and (max-width: 500px){
+
+    html{
+        font-size: 45%;
+    }
+
+    .form-wrapper{
+        width:100%;
+    }
+
+    nav{
+        text-align: center;
+    }
+
+    .form-wrapper label{
+        font-size:2.5rem;
+    }
+
+}
+/*Mobile End*/
