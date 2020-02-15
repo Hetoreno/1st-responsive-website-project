@@ -241,7 +241,8 @@ footer ul{
 }
 
 footer a{
-    padding: 2rem;
+padding:0.5rem;   
+margin: 1rem;
 }
 
 .footer-wrap{
